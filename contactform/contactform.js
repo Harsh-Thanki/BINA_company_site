@@ -94,14 +94,16 @@ jQuery(document).ready(function($) {
     if( ! action ) {
       action = 'contactform/contactform.php';
     }
-    console.log("Before AJAX request");
+//    console.log("Before AJAX request");
+//    console.log("Serialized Form Data:", str);
     $.ajax({
       type: "POST",
       url: action,
       data: str,
       success: function(msg) {
-         alert(str);
-        console.log(msg);
+//        alert(str);
+        console.log("Server Response:", msg);
+//        console.log(msg);
         if (msg == 'OK') {
           $("#sendmessage").addClass("show");
           $("#errormessage").removeClass("show");
