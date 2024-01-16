@@ -1196,6 +1196,67 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 /*--------------------------------------------------------------
+# FAQ
+--------------------------------------------------------------*/
+#faq {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+}
+
+#faq .section-header h3 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+#faqAccordion {
+  margin-top: 30px;
+}
+
+#faqAccordion .card {
+  border: none;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+#faqAccordion .card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#faqAccordion .card-header {
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+}
+
+#faqAccordion .btn-link {
+  color: #000000; 
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease-in-out;
+}
+
+#faqAccordion .btn-link:hover {
+  color: #336666;
+}
+
+#faqAccordion .card-body {
+  font-size: 16px;
+  color: #555;
+  padding: 20px;
+  background-color: #fff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#faqAccordion .card:not(:last-child) {
+  border-bottom: 1px solid #ddd;
+}
+
+/*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 
