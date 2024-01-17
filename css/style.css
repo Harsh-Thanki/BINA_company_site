@@ -129,7 +129,8 @@ h6 {
 }
 
 #header.header-scrolled {
-  background: rgba(0, 0, 0, 0.9);
+  /* background: rgba(0, 0, 0, 0.9); */
+  background: rgba(17, 17, 17);
   padding: 20px 0;
   height: 72px;
   transition: all 0.5s;
@@ -137,6 +138,7 @@ h6 {
 
 #header #logo {
   float: left;
+  margin-top: -15px;
 }
 
 #header #logo h1 {
@@ -159,6 +161,9 @@ h6 {
 #header #logo img {
   padding: 0;
   margin: 0;
+  max-width: 220px;
+  max-height: 72px; 
+  width: auto; 
 }
 
 /*--------------------------------------------------------------
@@ -1276,6 +1281,13 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 30px;
 }
 
+#footer .footer-top .footer-info img{
+  max-width: 250px;
+  max-height: 100px; 
+  width: auto; 
+  margin-top: -20px;
+}
+
 #footer .footer-top .footer-info h3 {
   font-size: 34px;
   margin: 0 0 20px 0;
@@ -1449,5 +1461,17 @@ body.mobile-nav-active #mobile-nav-toggle {
 
   #mobile-nav-toggle {
     display: inline;
+  }
+}
+
+@media (max-width: 768px) {
+  #header #logo img {
+    max-height: 70px; /* Adjust the max-height for header logo on small screens */
+  }
+}
+
+@media (max-width: 768px) {
+  #footer .footer-top .footer-info img {
+    max-height: 70px; /* Adjust the max-height for footer logo on small screens */
   }
 }
