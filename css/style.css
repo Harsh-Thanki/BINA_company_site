@@ -129,7 +129,8 @@ h6 {
 }
 
 #header.header-scrolled {
-  background: rgba(0, 0, 0, 0.9);
+  /* background: rgba(0, 0, 0, 0.9); */
+  background: rgba(17, 17, 17);
   padding: 20px 0;
   height: 72px;
   transition: all 0.5s;
@@ -137,6 +138,7 @@ h6 {
 
 #header #logo {
   float: left;
+  margin-top: -15px;
 }
 
 #header #logo h1 {
@@ -159,6 +161,9 @@ h6 {
 #header #logo img {
   padding: 0;
   margin: 0;
+  max-width: 220px;
+  max-height: 72px; 
+  width: auto; 
 }
 
 /*--------------------------------------------------------------
@@ -1196,6 +1201,67 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 /*--------------------------------------------------------------
+# FAQ
+--------------------------------------------------------------*/
+#faq {
+  background-color: #f8f9fa;
+  padding: 30px 0;
+}
+
+#faq .section-header h3 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+#faqAccordion {
+  margin-top: 30px;
+}
+
+#faqAccordion .card {
+  border: none;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+#faqAccordion .card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#faqAccordion .card-header {
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+}
+
+#faqAccordion .btn-link {
+  color: #000000; 
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease-in-out;
+}
+
+#faqAccordion .btn-link:hover {
+  color: #336666;
+}
+
+#faqAccordion .card-body {
+  font-size: 16px;
+  color: #555;
+  padding: 20px;
+  background-color: #fff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#faqAccordion .card:not(:last-child) {
+  border-bottom: 1px solid #ddd;
+}
+
+/*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 
@@ -1213,6 +1279,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #footer .footer-top .footer-info {
   margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-info img{
+  max-width: 250px;
+  max-height: 100px; 
+  width: auto; 
+  margin-top: -20px;
 }
 
 #footer .footer-top .footer-info h3 {
@@ -1388,5 +1461,17 @@ body.mobile-nav-active #mobile-nav-toggle {
 
   #mobile-nav-toggle {
     display: inline;
+  }
+}
+
+@media (max-width: 768px) {
+  #header #logo img {
+    max-height: 70px; /* Adjust the max-height for header logo on small screens */
+  }
+}
+
+@media (max-width: 768px) {
+  #footer .footer-top .footer-info img {
+    max-height: 70px; /* Adjust the max-height for footer logo on small screens */
   }
 }
