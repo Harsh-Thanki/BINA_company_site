@@ -1,6 +1,7 @@
 <?php
 
 // Connect to the database
+// change below arguments of mysqli function as per requirement
 $db = new mysqli('localhost', 'root', '', 'contact_form_db');
 
 // Check connection
