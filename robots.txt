@@ -1,5 +1,5 @@
 User-agent: *
-Disallow: /img/
+Disallow:
 
 Sitemap: https://www.binaaccounting.com/sitemap.xml
 
