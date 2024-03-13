@@ -236,6 +236,13 @@ h6 {
   text-align: center;
 }
 
+#intro .carousel-content h1{
+  color: #CCFFFF;
+  margin-bottom: 30px;
+  font-size: 48px;
+  font-weight: 700;
+}
+
 #intro h2 {
   color: #CCFFFF;
   margin-bottom: 30px;
